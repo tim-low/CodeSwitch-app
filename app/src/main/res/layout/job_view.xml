@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_margin="4dp"
+        >
+
+        <ImageView
+            android:id="@+id/JobImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="2dp"/>
+        <RelativeLayout
+            android:id="@+id/JobTitleLayout"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/JobImage">
+            <TextView
+                android:id="@+id/JobTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Title 1"
+                android:textSize= "16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:ellipsize="end"
+                android:paddingTop="15dp"
+                android:paddingLeft="10dp"
+                android:maxLines="2"/>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/JobTitleLayout">
+            <TextView
+                android:id="@+id/CompanyText"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="OrganizationText"
+                android:textSize="12sp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/DatePostedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="ModeText"
+                android:textSize="8sp"/>
+
+            <TextView
+                android:id="@+id/QualifiedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CompanyText"
+                android:text="QualifiedText"
+                android:layout_marginLeft="48dp"
+                android:textSize="8sp"/>
+
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

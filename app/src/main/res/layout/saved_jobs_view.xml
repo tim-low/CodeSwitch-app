@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:id="@+id/SavedJobImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="2dp"/>
+
+        <RelativeLayout
+            android:id="@+id/SavedJobTitleLayout"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/SavedJobImage">
+            <TextView
+                android:id="@+id/SavedJobTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Title 1"
+                android:textSize= "16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:ellipsize="end"
+                android:paddingTop="15dp"
+                android:paddingLeft="10dp"
+                android:maxLines="2"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/SavedJobTitleLayout">
+
+            <TextView
+                android:id="@+id/SavedJobCompanyText"
+                android:layout_width="wrap_content"
+                android:maxWidth="110dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="OrganizationText"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/SavedJobDatePostedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SavedJobCompanyText"
+                android:layout_toRightOf="@+id/JobTitleText"
+                android:layout_marginLeft="5dp"
+                android:text="ModeText"
+                android:textSize="8sp"/>
+
+            <TextView
+                android:id="@+id/SavedJobQualifiedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/SavedJobDatePostedText"
+                android:text="QualifiedText"
+                android:textSize="8sp"/>
+            <TextView
+                android:id="@+id/AppliedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/AppliedImageLayout"
+                android:text="Job Applied"
+                android:textSize="8sp"/>
+
+            <RelativeLayout
+                android:id="@+id/AppliedImageLayout"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="-1dp">
+
+                <ImageView
+                    android:id="@+id/AppliedImage"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="2dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

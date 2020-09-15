@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ic_job_search"
+        android:icon="@drawable/job_img"
+        android:title="Jobs"/>
+
+    <item
+        android:id="@+id/ic_course_search"
+        android:icon="@drawable/course_img"
+        android:title="Courses"/>
+
+    <item
+        android:id="@+id/ic_saved_jobs"
+        android:icon="@drawable/saved_jobs_img"
+        android:title="Saved Jobs"/>
+
+    <item
+        android:id="@+id/ic_profile"
+        android:icon="@drawable/profile_img"
+        android:title="My Profile"
+        />
+
+</menu>
